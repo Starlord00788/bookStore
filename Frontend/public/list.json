@@ -1,0 +1,76 @@
+[
+    {
+        "id":1,
+        "name":"Story Book",
+        "title":" Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/cute-bunny-stack-books_1308-174500.jpg?t=st=1738678257~exp=1738681857~hmac=fe2f437eb6b5f8d49abd099042c74fa275ccc796c6c798dc82f27946f70efece&w=360"
+
+    },
+    {
+        "id":2,
+        "name":"Comedy Book",
+        "title":" Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "price":20,
+        "category":"Entertainment",
+        "image":"https://img.freepik.com/free-vector/cute-bunny-stack-books_1308-174500.jpg?t=st=1738678257~exp=1738681857~hmac=fe2f437eb6b5f8d49abd099042c74fa275ccc796c6c798dc82f27946f70efece&w=360"
+
+    },
+    {
+        "id":3,
+        "name":"Dune",
+        "title":" Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "price":30,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/cute-bunny-stack-books_1308-174500.jpg?t=st=1738678257~exp=1738681857~hmac=fe2f437eb6b5f8d49abd099042c74fa275ccc796c6c798dc82f27946f70efece&w=360"
+
+    },
+    {
+        "id":4,
+        "name":"Steins Gate",
+        "title":" Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "price":50,
+        "category":"Sci-Fi",
+        "image":"https://img.freepik.com/free-vector/cute-bunny-stack-books_1308-174500.jpg?t=st=1738678257~exp=1738681857~hmac=fe2f437eb6b5f8d49abd099042c74fa275ccc796c6c798dc82f27946f70efece&w=360"
+
+    },
+    {
+        "id":5,
+        "name":"Shadow Slave",
+        "title":" Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "price":50,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/cute-bunny-stack-books_1308-174500.jpg?t=st=1738678257~exp=1738681857~hmac=fe2f437eb6b5f8d49abd099042c74fa275ccc796c6c798dc82f27946f70efece&w=360"
+
+    },
+    {
+        "id":6,
+        "name":"Lord of the Mysteries",
+        "title":" Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "price":50,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/cute-bunny-stack-books_1308-174500.jpg?t=st=1738678257~exp=1738681857~hmac=fe2f437eb6b5f8d49abd099042c74fa275ccc796c6c798dc82f27946f70efece&w=360"
+
+    },
+    {
+        "id":7,
+        "name":"Slice of life",
+        "title":" Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "price":60,
+        "category":"Rom-Com",
+        "image":"https://img.freepik.com/free-vector/cute-bunny-stack-books_1308-174500.jpg?t=st=1738678257~exp=1738681857~hmac=fe2f437eb6b5f8d49abd099042c74fa275ccc796c6c798dc82f27946f70efece&w=360"
+
+    },
+    {
+        "id":8,
+        "name":"Sweet Home",
+        "title":" Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "price":50,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/cute-bunny-stack-books_1308-174500.jpg?t=st=1738678257~exp=1738681857~hmac=fe2f437eb6b5f8d49abd099042c74fa275ccc796c6c798dc82f27946f70efece&w=360"
+
+    }
+
+   
+]
