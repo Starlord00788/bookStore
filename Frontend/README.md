@@ -21,9 +21,6 @@ The **E-Commerce Bookstore Website** is a full-stack web application built using
 - **Authentication** – JWT-based secure login
 - **Caching & Performance** – API optimization techniques
 
-## 📷 Screenshot
-![E-Commerce Bookstore Screenshot](#)
-
 ## 📦 Installation & Usage
 1. Clone the repository:
    ```bash
