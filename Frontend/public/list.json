@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "The Begining After The End",
+        "author": "TurtleMe",
+        "price": 40,
+        "stock":"10",
+        "description":"The Beginning After The End follows King Grey, a powerful monarch who is reincarnated into a new world of magic and monsters, seeking redemption and a meaningful life beyond power.",
+        "category": "Isekai",
+        "coverImage": "https://res.cloudinary.com/dbxevxvmt/image/upload/v1743885254/tbate_vs46pf.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Greatest Estate Developer",
+        "author": "BK_Moon",
+        "price": 50,
+        "stock":"10",
+        "description":"A brilliant civil engineer is reincarnated into a fantasy world and uses his knowledge to revolutionize land development and outsmart nobles.",
+        "category": "Entertainment",
+        "coverImage": "https://res.cloudinary.com/dbxevxvmt/image/upload/v1743885253/Greatest_Estate_Developer_dszz5s.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Dune",
+        "author": "Frank Herbert",
+        "price": 20,
+        "stock":"",
+        "description":"Set in a distant future, Dune follows Paul Atreides as he navigates politics, prophecy, and survival on the desert planet Arrakis, the only source of the universe’s most valuable substance.",
+        "category": "Thriller",
+        "coverImage": "https://res.cloudinary.com/dbxevxvmt/image/upload/v1743885253/Dune_rktg5e.webp"
+    },
+    {
+        "id": 4,
+        "title": "Steins Gate",
+        "author": "Chiyomaru Shikura",
+        "price": 25,
+        "stock":"",
+        "description":"A group of friends accidentally discover time travel and face dire consequences as they try to alter timelines and prevent tragic events.",
+        "category": "Sci-Fi",
+        "coverImage": "https://res.cloudinary.com/dbxevxvmt/image/upload/v1743885253/Steins_Gate_hts4zm.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Re:Zero − Starting Life in Another World",
+        "author": "Tappei Nagatsuki",
+        "price": 50,
+        "stock":"",
+        "description":"A young man is summoned to a new world and discovers he can rewind time upon death.",
+        "category": "Fantasy",
+        "coverImage": "https://res.cloudinary.com/dbxevxvmt/image/upload/v1743885253/Reero_bcvq9j.webp"
+    },
+    {
+        "id": 6,
+        "title": "That Time I Got Reincarnated as a Slime",
+        "author": "Fuse",
+        "price": 45,
+        "stock":"",
+        "description":"A man is reborn as a slime in a magical land and gains powerful allies and skills.",
+        "category": "Adventure",
+        "coverImage": "https://res.cloudinary.com/dbxevxvmt/image/upload/v1743885254/That_Time_I_Got_Reincarnated_as_a_Slime_inbtwf.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Golden Time",
+        "author": "Yuyuko Takemiya",
+        "price": 39,
+        "stock":"",
+        "description":"A college student with amnesia tries to rebuild his life and love, caught between his forgotten past and the challenges of his present.",
+        "category": "Rom-Com",
+        "coverImage": "https://res.cloudinary.com/dbxevxvmt/image/upload/v1743885253/Golden_Time_x0nvto.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Sweet Home",
+        "author": "Carnby Kim",
+        "price": 41,
+        "stock":"",
+        "description":"When a mysterious apocalypse turns people into monsters, a reclusive teenager must fight for survival—and his humanity—inside a quarantined apartment complex.",
+        "category": "Dark",
+        "coverImage": "https://res.cloudinary.com/dbxevxvmt/image/upload/v1743885254/Sweet_Hom_l2ogj2.webp"
+    }
+]
