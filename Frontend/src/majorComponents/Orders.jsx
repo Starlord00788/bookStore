@@ -25,7 +25,7 @@ const Orders = () => {
 
     const fetchOrders = async () => {
       try {
-        const res = await fetch(`http://localhost:3000/api/v1/orders/user/${userId}`, {
+        const res = await fetch(`https://bookstore-backend-qylv.onrender.com/api/v1/orders/user/${userId}`, {
           headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${storedToken}`,
