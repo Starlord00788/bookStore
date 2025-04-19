@@ -29,7 +29,7 @@ const AdminPage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/v1/books/fetch-google-books",
+        "https://bookstore-backend-qylv.onrender.com/api/v1/books/fetch-google-books",
         { query },
         {
           headers: {
@@ -57,7 +57,7 @@ const AdminPage = () => {
   const handleAddBook = async (book, index) => {
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/v1/books/addBook",
+        "https://bookstore-backend-qylv.onrender.com/api/v1/books/addBook",
         book,
         {
           headers: {
