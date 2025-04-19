@@ -8,7 +8,7 @@ export const fetchBooks = createAsyncThunk('books/fetchBooks', async (_, { getSt
     try {
         const accessToken = localStorage.getItem('accessToken');
         const response = await axios.post(
-            'http://localhost:3000/api/v1/books/getBooks', 
+            'https://bookstore-backend-qylv.onrender.com/api/v1/books/getBooks', 
             {}, 
             {
                 headers: {
