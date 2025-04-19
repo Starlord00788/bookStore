@@ -40,7 +40,7 @@ const Cart = () => {
       0
     );
 
-    const res = await fetch("http://localhost:3000/api/v1/payment/create-order", {
+    const res = await fetch("https://bookstore-backend-qylv.onrender.com/api/v1/payment/create-order", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ amount: totalAmount, currency: "INR" }),
@@ -57,7 +57,7 @@ const Cart = () => {
       name: "NovelNimbus",
       description: "Book Purchase",
       handler: async (res) => {
-        const verifyRes = await fetch("http://localhost:3000/api/v1/payment/verify", {
+        const verifyRes = await fetch("https://bookstore-backend-qylv.onrender.com/api/v1/payment/verify", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ ...res, userId, cartItems: cart }),
@@ -73,7 +73,7 @@ const Cart = () => {
             razorpay_signature: res.razorpay_signature,
           };
 
-          const orderRes = await fetch("http://localhost:3000/api/v1/orders/create", {
+          const orderRes = await fetch("https://bookstore-backend-qylv.onrender.com/api/v1/orders/create", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
