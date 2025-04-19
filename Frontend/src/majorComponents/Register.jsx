@@ -35,7 +35,7 @@ const Register = () => {
       );
 
       const response = await axios.post(
-        "http://localhost:3000/api/v1/users/register",
+        "https://bookstore-backend-qylv.onrender.com/api/v1/users/register",
         data,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
@@ -53,7 +53,7 @@ const Register = () => {
 
     setIsVerifying(true);
     try {
-      const response = await axios.post("http://localhost:3000/api/v1/users/verify-otp", {
+      const response = await axios.post("https://bookstore-backend-qylv.onrender.com/api/v1/users/verify-otp", {
         email: formData.email,
         otp,
       });
