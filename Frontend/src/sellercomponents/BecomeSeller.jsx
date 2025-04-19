@@ -14,7 +14,7 @@ const BecomeSeller = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/v1/seller/become",
+        "https://bookstore-backend-qylv.onrender.com/api/v1/seller/become",
         { shopName, bio },
         { headers: { Authorization: `Bearer ${token}` } }
       );
