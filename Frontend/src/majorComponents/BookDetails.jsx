@@ -46,7 +46,7 @@ const BookDetails = () => {
 
       const [dbBooksResponse] = await Promise.all([
         axios.post(
-          "http://localhost:3000/api/v1/books/relatedbooks",
+          "https://bookstore-backend-qylv.onrender.com/api/v1/books/relatedbooks",
           { category: book.category },
           { headers: { Authorization: `Bearer ${token}` } }
         ),
