@@ -11,12 +11,12 @@ const SellerDashboard = () => {
   useEffect(() => {
     const fetchSellerAndBooks = async () => {
       try {
-        const sellerRes = await axios.get('http://localhost:3000/api/v1/seller/me', {
+        const sellerRes = await axios.get('https://bookstore-backend-qylv.onrender.com/api/v1/seller/me', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setSeller(sellerRes.data.seller);
 
-        const booksRes = await axios.get('http://localhost:3000/api/v1/seller/mybooks', {
+        const booksRes = await axios.get('https://bookstore-backend-qylv.onrender.com/api/v1/seller/mybooks', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setBooks(booksRes.data.books || []);
