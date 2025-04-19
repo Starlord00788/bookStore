@@ -21,7 +21,7 @@ const AddSellerBook = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/api/v1/seller/addbook', form, {
+      await axios.post('https://bookstore-backend-qylv.onrender.com/api/v1/seller/addbook', form, {
         headers: { Authorization: `Bearer ${token}` },
       });
       alert('Book added successfully!');
