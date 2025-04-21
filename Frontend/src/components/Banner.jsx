@@ -81,7 +81,7 @@ const Banner = () => {
         navigate("/discover", { state: { name: nameInput } });
       }}
       className="btn btn-secondary w-full sm:w-auto disabled:opacity-50 disabled:cursor-not-allowed"
-      disabled={!nameInput.trim()}
+      
     >
       Search
     </button>
