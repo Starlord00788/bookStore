@@ -61,26 +61,33 @@ const Banner = () => {
         )}
 
         {islogin && (
-          <div className="flex flex-col sm:flex-row gap-4">
-            <label className="input input-bordered flex items-center gap-2 w-full sm:w-2/3 bg-white shadow">
-              <input
-                type="text"
-                className="grow"
-                placeholder="Search for Books..."
-                value={nameInput}
-                onChange={(e) => setNameInput(e.target.value)}
-              />
-            </label>
-            <button
-              onClick={() => {
-                navigate("/discover" , { state: { name: nameInput } });
-              }}
-              className="btn btn-secondary w-full sm:w-auto"
-            >
-              Search
-            </button>
-          </div>
-        )}
+  <div className="flex flex-col sm:flex-row gap-4">
+    <label className="input input-bordered flex items-center gap-2 w-full sm:w-2/3 bg-white shadow">
+      <input
+        type="text"
+        className="grow"
+        placeholder="Search for Books..."
+        value={nameInput}
+        onChange={(e) => setNameInput(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" && nameInput.trim()) {
+            navigate("/discover", { state: { name: nameInput } });
+          }
+        }}
+      />
+    </label>
+    <button
+      onClick={() => {
+        navigate("/discover", { state: { name: nameInput } });
+      }}
+      className="btn btn-secondary w-full sm:w-auto disabled:opacity-50 disabled:cursor-not-allowed"
+      disabled={!nameInput.trim()}
+    >
+      Search
+    </button>
+  </div>
+)}
+
       </div>
 
       {/* Right Image Section */}
