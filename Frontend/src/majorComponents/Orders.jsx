@@ -48,13 +48,12 @@ const Orders = () => {
     fetchOrders();
   }, [user, userId, storedToken, navigate]);
 
- const generateRandomDeliveryDate = () => {
-  const randomDays = Math.floor(Math.random() * 5) + 1; // Random between 1 to 5 days
-  const deliveryDate = new Date();
-  deliveryDate.setDate(deliveryDate.getDate() + randomDays);
-  return deliveryDate;
-};
-
+  const generateRandomDeliveryDate = () => {
+    const randomDays = Math.floor(Math.random() * 5) + 1; // Random between 1 to 5 days
+    const deliveryDate = new Date();
+    deliveryDate.setDate(deliveryDate.getDate() + randomDays);
+    return deliveryDate;
+  };
 
   const getStatus = (order) => {
     const currentDate = new Date();
@@ -145,6 +144,9 @@ const Orders = () => {
                 <div className="mt-4 flex justify-between items-center">
                   <p className="text-sm text-gray-500 italic">
                     Placed on: {new Date(order.createdAt).toLocaleString()}
+                  </p>
+                  <p className="text-sm text-gray-500 italic">
+                    Delivery on: {new Date(order.deliveryDate).toLocaleDateString()}
                   </p>
                 </div>
               </motion.div>
