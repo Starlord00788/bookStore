@@ -48,12 +48,13 @@ const Orders = () => {
     fetchOrders();
   }, [user, userId, storedToken, navigate]);
 
-  const generateRandomDeliveryDate = () => {
-    const randomDays = Math.floor(Math.random() * 7) + 2; // Random between 2 to 8 days
-    const deliveryDate = new Date();
-    deliveryDate.setDate(deliveryDate.getDate() + randomDays);
-    return deliveryDate;
-  };
+ const generateRandomDeliveryDate = () => {
+  const randomDays = Math.floor(Math.random() * 5) + 1; // Random between 1 to 5 days
+  const deliveryDate = new Date();
+  deliveryDate.setDate(deliveryDate.getDate() + randomDays);
+  return deliveryDate;
+};
+
 
   const getStatus = (order) => {
     const currentDate = new Date();
