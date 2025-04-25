@@ -5,8 +5,6 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Package } from "lucide-react";
 
-
-
 const Orders = () => {
   const [orders, setOrders] = useState([]);
   const navigate = useNavigate();
@@ -34,7 +32,13 @@ const Orders = () => {
 
         if (!res.ok) throw new Error("Unauthorized or failed to fetch orders.");
         const data = await res.json();
-        if (data.success) setOrders(data.orders);
+        if (data.success) {
+          const updatedOrders = data.orders.map(order => ({
+            ...order,
+            deliveryDate: generateRandomDeliveryDate(),
+          }));
+          setOrders(updatedOrders);
+        }
       } catch (err) {
         console.error("Failed to fetch orders:", err.message);
         navigate("/login");
@@ -43,6 +47,22 @@ const Orders = () => {
 
     fetchOrders();
   }, [user, userId, storedToken, navigate]);
+
+  const generateRandomDeliveryDate = () => {
+    const randomDays = Math.floor(Math.random() * 7) + 2; // Random between 2 to 8 days
+    const deliveryDate = new Date();
+    deliveryDate.setDate(deliveryDate.getDate() + randomDays);
+    return deliveryDate;
+  };
+
+  const getStatus = (order) => {
+    const currentDate = new Date();
+    const deliveryDate = new Date(order.deliveryDate);
+    if (currentDate < deliveryDate) {
+      return "Out for Delivery";
+    }
+    return "Delivered";
+  };
 
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -92,16 +112,16 @@ const Orders = () => {
                     <span className="font-semibold text-indigo-600">Order ID:</span> {order._id}
                   </p>
                   <span className={`text-xs font-bold px-3 py-1 rounded-full ${
-                    order.status === "Delivered"
+                    getStatus(order) === "Delivered"
                       ? "bg-green-100 text-green-700"
                       : "bg-yellow-100 text-yellow-700"
                   }`}>
-                    {order.status}
+                    {getStatus(order)}
                   </span>
                 </div>
 
                 <p className="text-gray-800 mb-2">
-                  <strong>Total:</strong> ₹{(order.amount)/10000}
+                  <strong>Total:</strong> ₹{(order.amount) / 10000}
                 </p>
 
                 <p className="font-semibold text-purple-700 mb-3">Items:</p>
@@ -125,9 +145,6 @@ const Orders = () => {
                   <p className="text-sm text-gray-500 italic">
                     Placed on: {new Date(order.createdAt).toLocaleString()}
                   </p>
-                  {/* <button className="bg-indigo-500 text-white px-4 py-1.5 text-sm font-medium rounded-md hover:bg-indigo-600 transition">
-                    Reorder 🔁
-                  </button> */}
                 </div>
               </motion.div>
             ))}
