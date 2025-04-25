@@ -145,9 +145,7 @@ const Orders = () => {
                   <p className="text-sm text-gray-500 italic">
                     Placed on: {new Date(order.createdAt).toLocaleString()}
                   </p>
-                  <p className="text-sm text-gray-500 italic">
-                    Delivery on: {new Date(order.deliveryDate).toLocaleDateString()}
-                  </p>
+                 
                 </div>
               </motion.div>
             ))}
